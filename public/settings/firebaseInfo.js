@@ -1,11 +1,13 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyCMMMkdivJKVh7QanhW6uD_E82idKd19bg",
-  authDomain: "eq-demo2.firebaseapp.com",
-  projectId: "eq-demo2",
-  storageBucket: "eq-demo2.appspot.com",
-  messagingSenderId: "1092133774225",
-  appId: "1:1092133774225:web:3615c0aa62da1603d4f030",
-};
 
-firebase.initializeApp(firebaseConfig);
-var rootRef = firebase.database().ref();
+  const firebaseConfig = {
+  apiKey: "AIzaSyBgjRm-9ABSLQmkdSHeMkYzxNS2uYtKXKs",
+  authDomain: "q-method-ucy.firebaseapp.com",
+  databaseURL: "https://q-method-ucy-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "q-method-ucy",
+  storageBucket: "q-method-ucy.appspot.com",
+  messagingSenderId: "678029160971",
+  appId: "1:678029160971:web:659a19d2fe5d56088b0d0e"
+};
+  
+  firebase.initializeApp(firebaseConfig);  
+  var rootRef = firebase.database().ref();

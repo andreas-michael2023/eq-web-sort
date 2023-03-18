@@ -3,26 +3,28 @@
    <config version="1.0" htmlParse="false">
 
    <!-- GENERAL SETTINGS -->
-   <!-- options: firebase, local, or sheets -->
    <item id="studyTitle">My_Q_project</item> 
-   <item id="setupTarget">sheets</item>
-   <item id="firebaseOrLocal">sheets</item>
-   <item id="steinApiUrl">https://api.steinhq.com/v1/storages/636742d5eced9b09e9a38cea</item>
+   <item id="setupTarget">firebase</item>
+   <item id="firebaseOrLocal">firebase</item>
+   <item id="steinApiUrl">https://api.steinhq.com/v1/storages/63c2c63feced9b09e9b3ec8f</item>
+
 
    <item id="shuffleCards">true</item>
-   <item id="headerBarColor">#337ab7</item>
+   <item id="headerBarColor">#33b83f</item>
    <item id="devMode">false</item>
    
+
    <!-- ACCESS -->
    <!-- options: anonymous, partId-access, partId, access -->
    <item id="initialScreen">anonymous</item>
    <item id="accessCode">demo</item>
 
 
-   <!-- FONT OPTIONS -->  
-   <item id="setDefaultFontSize">true</item>
-   <item id="defaultFontSize">25</item>
-   <item id="defaultFontColor">#2a2a2a</item>
+   <!-- FONT OPTIONS -->
+   <!-- defaults false, 15, #2a2a2a -->
+   <item id="setDefaultFontSize">undefined</item>
+   <item id="defaultFontSize">15</item>
+   <item id="defaultFontColor">undefined</item>
 
 
    <!-- PRESORT -->
@@ -30,14 +32,14 @@
    <item id="greenCardColor">#ccffcc</item>
    <item id="yellowCardColor">#e0e0e0</item>
    <item id="pinkCardColor">#ffe0f0</item>
-
+ 
 
    <!-- SORT -->
-   <item id="condOfInstFontSize">20</item>
+   <item id="condOfInstFontSize">25</item>
    <item id="allowUnforcedSorts">false</item>
    <item id="warnOverloadedColumn">true</item>
-   <item id="setMinCardHeight">false</item>
-   <item id="minCardHeight">120</item>
+   <item id="setMinCardHeight">undefined</item>
+   <item id="minCardHeight">undefined</item>
 
 
    <!-- POSTSORT -->
@@ -58,46 +60,24 @@
    </item>
 
    <item id="survey">
-        <input type="text" required="true" limited="true" maxlength="100" restricted="false"></input>
-        <label>1. Have you had classes with me before?*</label>
-        <note>If yes, please {{{i}}}list them here{{{/i}}}. (limit = 100 characters)</note>
-   </item>
-
-   <item id="survey">
         <input type="textarea" required="false"></input>
-        <label>2. Describe your experience using the iPads in this class</label>
+        <label>1. Περιέγραψε την εμπειρία σου με αυτή τη μεθοδολογία</label>
         <placeholder>input comment here</placeholder>
    </item>
 
    <item id="survey">
-        <input type="radio" required="false">Freshman;;;Sophomore;;;Junior;;;Senior</input>
-        <label>3. Year</label>
-        <note>Please select your year</note>
+        <input type="select" required="false">Άντρας;;;Γυναίκα;;;Άλλο</input>
+        <label>4. Ποιό είναι το φύλο σου?</label>
    </item>
 
    <item id="survey">
-        <input type="select" required="false">Global Studies;;;Linguistics;;;English Literature</input>
-        <label>4. What is your program focus?</label>
+        <input type="checkbox" required="true">δημοτικό;;;γυμνάσιο;;;λύκειο;;;πανεπιστήμιο</input>
+        <label>5. Επίπεδο μόρφωσης?*</label>
    </item>
 
    <item id="survey">
-        <input type="checkbox" required="true">Lecture;;;Group Discussion;;;Active Learning</input>
-        <label>5. What kind of class do you prefer?*</label>
-   </item>
-
-   <item id="survey">
-        <input type="rating2" required="false" scale="Yes;;;No">I have used an iPad in class {{{b}}}before{{{/b}}}.;;; I have used a notebook computer in class before.;;;I have used Moodle before.;;;I have used Quizlet before;;;</input>
-        <label>6. Please respond to the following {{{u}}}statements{{{/u}}}</label>
-   </item>
-
-   <item id="survey">
-        <input type="rating5" required="false" scale="1;;;2;;;3;;;4;;;5">How would you rate the use of iPads in this class?;;;How would you rate this class overall?;;;How was your interaction with {{{u}}}other students?{{{/u}}};;;How was access to the computer lab?</input>
-        <label>7. {{{i}}}Please{{{/i}}} answer the following questions</label>
-   </item>
-
-   <item id="survey">
-        <input type="rating10" required="false" scale="1;;;2;;;3;;;4;;;5;;;6;;;7;;;8;;;9;;;10">How would you rate the use of the Socrative website in this class?;;;How would you rate the use of the {{{b}}}Quizlet{{{/b}}} website in this class?;;;How would you rate the use of Moodle in this class?;;;How would you rate the use of Edmodo in this class?;;;</input>
-        <label>8. {{{u}}}Please{{{/u}}} answer the following questions</label>
+        <input type="rating10" required="false" scale="1;;;2;;;3;;;4;;;5;;;6;;;7;;;8;;;9;;;10">Με βάση το πολιτικό φάσμα όπου 1 σημαίνει αριστερά και 10 δεξιά που θα τοποθερούσες τον εαυτό σου?</input>
+        <label>6. {{{u}}}Παρακαλώ {{{/u}}} απάντησε στη πιο κάτω ερώτηση</label>
    </item>
 
 
